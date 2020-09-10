@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/wccolombia/demo.wccolombia.org/
+    - export DEPLOYPATH=/home/altahoco/staging.altahona.co/
     - /bin/cp -ru * $DEPLOYPATH

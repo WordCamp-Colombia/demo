@@ -1,7 +1,4 @@
 themeName="wcco"
-####################
-# bash wpedeploy.sh nameOfRemote
-####################
 # Set variables
 ####################
 # Cpanel remote URL
