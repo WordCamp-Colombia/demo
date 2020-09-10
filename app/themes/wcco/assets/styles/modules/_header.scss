@@ -1,0 +1,38 @@
+.site-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: to-rem(33);
+  padding-bottom: to-rem(14);
+  padding-top: to-rem(14);
+  @extend %container;
+  @media #{$medium-up} {
+    padding-bottom: to-rem(10);
+    padding-top: to-rem(6);
+  }
+}
+.custom-logo {
+  display: block;
+	max-width: to-rem(140);
+  height: auto;
+  @media #{$medium-up} {
+    max-width: to-rem(281);
+  }
+}
+.top-bar {
+	background-color: $brand;
+	font-size: 0;
+	left: 0;
+	padding: to-rem(10) 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	&__link {
+		font-family: 'Archivo Black';
+		font-size: to-rem(13);
+		letter-spacing: to-rem(0.15);
+		line-height: 1;
+	}
+}

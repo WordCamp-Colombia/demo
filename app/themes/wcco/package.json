@@ -1,0 +1,75 @@
+{
+  "name": "kili-build",
+  "version": "1.0.0",
+  "author": "Fabian Altahona <fabian.altahona@koombea.com>",
+  "homepage": "https://www.ab2web.com",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://www.ab2web.com"
+  },
+  "bugs": {
+    "url": "https://www.ab2web.com"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ],
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack --env.production --progress"
+  },
+  "engines": {
+    "node": ">= 4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/parser": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "asset-builder": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "caniuse-lite": "^1.0.30001107",
+    "chalk": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.0.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "file-loader": "^6.0.0",
+    "glob": "^7.1.6",
+    "image-webpack-loader": "^6.0.0",
+    "lazy-line-painter": "^1.9.6",
+    "lint-staged": "^10.2.11",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^12.0.0",
+    "postcss-load-config": "^2.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-safe-parser": "^4.0.0",
+    "prettier": "^2.0.5",
+    "sass-loader": "^9.0.2",
+    "script-loader": "^0.7.2",
+    "style-loader": "^1.1.2",
+    "svg-url-loader": "^6.0.0",
+    "terser-webpack-plugin": "^3.0.8",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.0",
+    "webpack-assets-manifest": "^3.0.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-fix-style-only-entries": "^0.5.1",
+    "yargs": "^15.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-validation": "^1.19.2"
+  }
+}

@@ -1,0 +1,28 @@
+// Extend your silent classes
+.flexgrid {
+  @extend %flexgrid;
+}
+.flexgrid--full {
+  @extend %flexgrid--full;
+}
+.flexgrid--center {
+  @extend %flexgrid--center;
+}
+
+.xsmall--col-12 {
+  @extend %xsmall--col-12;
+}
+
+.small--col-12 {
+  @extend %small--col-12;
+}
+
+.medium--col-5 {
+  @extend %medium--col-5;
+}
+.medium--col-7 {
+  @extend %medium--col-7;
+}
+.medium--col-10 {
+  @extend %medium--col-10;
+}

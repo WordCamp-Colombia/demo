@@ -1,0 +1,12 @@
+{% if item.get_children %}
+<ul class="sub-navigation__list" role="menubar">
+    {% for child in item.get_children %}
+      <li class="sub-navigation__item" role="presentation">
+        <a href="{{child.get_link}}" role="menuitem">{{child.title}}</a>
+        {% if child.get_children %}
+          {% include 'partials/navigation-children.twig' with {item: child} %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" {{ site.language_attributes }}> <![endif]-->
+<!--[if gt IE 8]><!-->
+	<html
+	class="no-js" {{ site.language_attributes }}> <!--<![endif]-->
+	{% include 'partials/head.twig' %}
+	<body {{function('body_class')}}>
+    <a href="#maincontent" class="sr-only" tabindex="0">Skip to Content</a>
+		{% block header %}
+			{{__('Sorry, no content yet', 'wcco')}}
+		{% endblock %}
+		<main id="maincontent" class="content">
+			{% block content %}
+				{{__('Sorry, no content yet', 'wcco')}}
+			{% endblock %}
+		</main>
+    {% block footer %}
+      {% include 'partials/footer.twig' %}
+		{% endblock %}
+	</body>
+</html>

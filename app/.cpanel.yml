@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/wccolombia/demo.wccolombia.org/
+    - /bin/cp -ru * $DEPLOYPATH

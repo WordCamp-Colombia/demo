@@ -1,0 +1,19 @@
+// Extend your silent classes
+.sr-only {
+  @extend %sr-only;
+}
+.hidden {
+  @extend %hidden;
+}
+.color--pink {
+  color: $secondary-brand;
+}
+.color--black {
+  color: $black;
+}
+.color--yellow {
+  color: $brand;
+}
+.text--underline {
+  text-decoration: underline;
+}

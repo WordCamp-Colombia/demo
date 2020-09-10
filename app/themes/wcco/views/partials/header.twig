@@ -1,0 +1,20 @@
+<header class="site-header" role="banner">
+  <div class="custom-header">
+    <div class="custom-header-media"></div>
+
+    <div class="site-branding">
+      <a href="#" class="custom-logo-link" rel="home">
+        <img src="https://i0.wp.com/2020.colombia.wordcamp.org/files/2020/07/logo@2x.png?fit=562%2C174&amp;ssl=1" class="custom-logo jetpack-lazy-image" alt="WordCamp Colombia" />
+      </a>
+    </div>
+  </div>
+  <nav class="main-navigation page-navigation-container" aria-label="Main navigation">
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+      Main menu
+    </button>
+    <div class="menu-main-menu-container">
+      <h2 class="sr-only">Primary Navigation</h2>
+      {% include 'partials/navigation.twig' with { active_menu: menu.header.get_items } %}
+    </div>
+  </nav>
+</header>

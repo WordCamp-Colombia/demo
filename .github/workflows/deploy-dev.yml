@@ -1,0 +1,29 @@
+name: Deploy to CPanel Server
+on:
+  push:
+    branches: master
+jobs:
+  engine_build_deploy:
+    runs-on: ubuntu-latest
+    name: Deploy to Cpanel
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - name: Creates WP-CONTENT directory and assets build
+        shell: bash
+        run: |
+          chmod +x .github/workflows/bash/build.sh
+          .github/workflows/bash/build.sh
+      - name: Push to Cpanel FTP Server
+        uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
+        with:
+          ftp_host: ${{ secrets.FTP_HOST }}
+          ftp_username: ${{ secrets.FTP_USERNAME }}
+          ftp_password: ${{ secrets.FTP_PASSWORD }}
+          local_source_dir: "wp-content"
+          dist_target_dir: "ftpdemo.altahona.co/wp-content"
+          delete: "false"

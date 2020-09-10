@@ -1,0 +1,12 @@
+{% extends "layouts/base.twig" %}
+{% block header %}
+	{% include 'partials/header.twig' %}
+{% endblock %}
+{% block content %}
+  <div class="container">
+    <h1>{{post.title}}</h1>
+    <div class="content">
+      {{post.content}}
+    </div>
+  </div>
+{% endblock %}
